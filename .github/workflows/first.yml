@@ -1,0 +1,13 @@
+name: FirstName
+
+on: 
+  workflow_dispatch:
+  
+  jobs:
+    first-job:
+      runs-on: ubuntu-latest
+      steps:
+        - name: Simple shell command step
+          run: echo Hello from Step 1
+        - name: Simple shell command step
+          run: echo Hello from Step 2
